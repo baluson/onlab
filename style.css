@@ -1,0 +1,128 @@
+:root {
+    --font_main: 'Arial', Arial, monospace;
+    /* new */
+    --color_primary: #82b0e0;
+
+    --color_background: rgb(102, 102, 102);
+    --color_workspace: #fff;
+
+    --color_inactive: #c4d3e4;
+    --color_warning: #e08282;
+    --color_hover: rgb(200, 198, 196);
+
+    --color_closehover: white;
+    --color_closebackground: red;
+    --color_buttonbackground: rgb(225, 225, 225);
+    --color_buttonborder: rgb(173, 173, 173);
+    --color_buttonbackgroundhover: rgb(229, 241, 251);
+    --color_buttonborderhover: rgb(0, 120, 215);
+    --color_inputborder: var(--color_buttonborder);
+
+    --color_titlebar: white;
+    --color_titlebarbackground: rgb(68, 68, 68);
+    --color_fullscreenhover: white;
+    --color_fullscreenbackground: var(--color_primary);
+
+    --color_stripbackground: rgb(190, 187, 184);
+    --color_stripmenubackground: rgb(212, 212, 212);
+    --color_stripsectionborder: rgb(121, 119, 117);
+    --color_stripselectorhover: var(--color_hover);
+    --color_stripblokkhover: rgb(225, 223, 221);
+    --color_stripblokksvg: #4f4e85;
+
+    --color_popupbackground: rgb(240, 240, 240);
+    --color_popuptitlebackground: white;
+    --color_popupcontentbackground: white;
+    --color_popupcontentborder: rgb(217, 217, 217);
+    --color_popupcategoryborder: var(--color_popupcontentborder);
+
+    --color_contextmenubackground: rgb(243, 242, 241);
+    --color_contextmenuborder: rgb(179, 176, 173);
+    --color_contextmenuhover: rgb(225, 223, 221);
+
+
+
+    --image_background: url("https://vigyor.hu/new.svg");
+}
+
+html,
+body {
+    min-height: 100%
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--font_main);
+    background-color: var(--color_background);
+}
+
+.prevent-select,
+.button {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+input,
+textarea,
+select {
+    height: 20px;
+    font-size: 14px;
+    padding: 1px 2px;
+    border: 1px solid var(--color_inputborder);
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+
+
+.contextmenu {
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    transform: scale(0);
+    transform-origin: top left;
+    background-color: var(--color_contextmenubackground);
+    border: 1px solid var(--color_contextmenuborder);
+
+}
+
+.contextmenu .option {
+    padding: 0px 10px;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.contextmenu .option:hover {
+    background-color: var(--color_contextmenuhover);
+}
+
+.visible {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}

@@ -1,0 +1,61 @@
+.workspace {
+    position: relative;
+    background-color: var(--color_workspace);
+    width: 95%;
+    height: calc(100vh - 28px - 128px - 8px + 1000px);
+    margin: 4px auto;
+}
+
+.block,
+.ioblock {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: aqua;
+}
+
+.block .blocktitle,
+.ioblock .blocktitle {
+    display: block;
+    margin: 0px auto;
+    height: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.block svg,
+.ioblock svg {
+    display: block;
+    margin: 7px auto;
+    height: 32px;
+    color: var(--color_stripblokksvg);
+}
+
+.arrow {
+    position: absolute;
+    height: 20px;
+}
+
+.arrowline {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    height: 1px;
+    width: inherit;
+    background-color: black;
+}
+
+.arrowhead {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 1px;
+    width: 1px;
+    margin: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+}

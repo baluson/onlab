@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PLC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="https://vigyor.hu/clippy/assets/clippy.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="titlebar.css" />
+  <link rel="stylesheet" href="strip.css" />
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="stylesheet" href="workspace.css" />
+</head>
+
+<body>
+  <header>
+
+    <div class="titlebar prevent-select">
+      <span class="title" id="programtitle" onclick="data_createproject();">%TITLE%</span>
+      <div class="programfullscreen" id="programfullscreen" onclick="fullscreen()">%CLOSESVG%</div>
+    </div>
+
+    <!-- BEGIN OF STRIPMENU-->
+    <div class="stripmenu prevent-select">
+      <div class="stripselector" id="stripselector">
+        <input type="radio" name="stripselector" id="stripbtnsettings" value="settings" onchange="stripchange()"
+          checked="">
+        <label for="stripbtnsettings">Settings
+          <hr class="bottomline">
+        </label>
+
+        <input type="radio" name="stripselector" id="stripbtn1" value="1" onchange="stripchange()">
+        <label for="stripbtn1">Math blocks
+          <hr class="bottomline">
+        </label>
+
+        <input type="radio" name="stripselector" id="stripbtn2" value="2" onchange="stripchange()">
+        <label for="stripbtn2">Comparator blocks
+          <hr class="bottomline">
+        </label>
+      </div>
+      <!-- BEGIN OF STRIP-->
+      <div class="strip" id="strip">
+      </div>
+      <!-- END OF STRIP-->
+      <!-- END OF STRIPMENU-->
+
+    </div>
+  </header>
+
+  <div class="workspace" id="workspace" dragover="blockContextMenu()" ondrop="dropblock(event)"
+    ondragover="allowdrop(event)" onmousemove="moveblock(event)" onclick="removecontextmenu();">
+
+  </div>
+  <div id="contextmenu" class="contextmenu">
+    <div class="item">Option 1</div>
+    <div class="item">Option 2</div>
+    <div class="item">Option 3</div>
+    <div class="item">Option 4</div>
+    <div class="item">Option 5</div>
+  </div>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="popup.js"></script>
+<script src="strip.js"></script>
+<script src="workspace.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+
+</html>

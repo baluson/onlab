@@ -1,0 +1,104 @@
+.stripmenu {
+    height: 128px;
+    background-color: var(--color_stripbackground);
+}
+
+.stripselector {
+    display: table-row;
+    height: 28px;
+}
+
+
+.stripselector input[type="radio"] {
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.stripselector label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    *background-color: var(--color_inactive);
+    padding: 4px 15px;
+    position: relative;
+
+}
+
+.stripselector>label:hover {
+    background-color: var(--color_stripselectorhover);
+}
+
+.bottomline {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    margin: 0px auto;
+    background-color: black;
+    border: none;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.stripselector input[type="radio"]:checked+label .bottomline {
+    visibility: visible;
+
+}
+
+.stripselector input[type="radio"]:checked+label:hover .bottomline {
+    width: 100%;
+    left: 0%;
+}
+
+.strip {
+    height: 100px;
+}
+
+.stripsection {
+    float: left;
+    height: 96px;
+    border-right: 1px solid var(--color_stripsectionborder);
+    margin: 2px 0px 2px 0px;
+    padding: 0px 4px 0px 4px;
+}
+
+.stripsectiontitle {
+    display: block;
+    height: 14px;
+    font-size: 12px;
+    clear: both;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.stripblokk {
+    float: left;
+    height: 84px;
+    min-width: 46px;
+    cursor: pointer;
+}
+
+.stripblokk:hover {
+    background-color: var(--color_stripblokkhover);
+}
+
+.stripblokk>svg {
+    display: block;
+    margin: 7px auto;
+    height: 32px;
+    color: var(--color_stripblokksvg);
+}
+
+.stripblokktitle {
+    display: block;
+    height: 14px;
+    font-size: 12px;
+    margin: 0px auto;
+    text-align: center;
+}

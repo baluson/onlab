@@ -1,0 +1,22 @@
+.titlebar {
+    position: sticky;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: var(--color_titlebar);
+    background-color: var(--color_titlebarbackground);
+    padding: 4px;
+}
+
+.titlebar .programfullscreen {
+    float: right;
+    height: 28px;
+    width: 28px;
+    margin: -4px;
+    cursor: pointer;
+}
+
+.titlebar .programfullscreen:hover {
+    color: var(--color_fullscreenhover);
+    background-color: var(--color_fullscreenbackground);
+}

@@ -1,0 +1,144 @@
+{
+  "boardID": "ESP32-C3",
+  "libraryVer": "1.0",
+  "boardsettings": {
+    "HWIO": {
+      "GPIO1": {
+        "pin": "1",
+        "uniqueID": "1",
+        "mode": "3",
+        "inputs": {
+          "0": "BLOCK:23.0"
+        }
+      },
+      "GPIO2": {
+        "pin": "5",
+        "uniqueID": "5",
+        "mode": "3",
+        "inputs": {
+          "0": "BLOCK:1.0"
+        }
+      },
+      "GPIO3": {
+        "pin": "4",
+        "uniqueID": "4",
+        "mode": "3",
+        "inputs": {
+          "0": "BLOCK:5.1"
+        }
+      },
+      "GPIO4": {
+        "pin": "6",
+        "uniqueID": "6",
+        "mode": "1",
+        "inputs": {
+          "0": "CONST:90"
+        }
+      },
+      "GPIO5": {
+        "pin": "2",
+        "uniqueID": "2",
+        "mode": "3",
+        "inputs": {
+          "0": "IO:1.0"
+        }
+      },
+      "GPIO6": {
+        "pin": "9",
+        "uniqueID": "9",
+        "mode": "3",
+        "inputs": {
+          "0": "BLOCK:0.0"
+        }
+      }
+    },
+    "Com.ports": {
+      "com1": {
+        "hardware": "RS485",
+        "workmode": "1",
+        "baudrate": "4800"
+      }
+    }
+  },
+  "librarysettings": {
+    "network": {
+      "wifi": {
+        "ssid": "test",
+        "password": "test"
+      },
+      "cloud": {
+        "cloud": "test.hu",
+        "ntp": "ntp.test.hu"
+      }
+    },
+    "local": {
+      "device": {
+        "boardname": "testName"
+      },
+      "localUser": {
+        "uuid": "test",
+        "password": "test"
+      }
+    }
+  },
+  "blocks": {
+    "0": {
+      "classID": "0",
+      "uniqueID": "0",
+      "inputs": {
+        "0": "BLOCK:0.0",
+        "1": "BLOCK:23.0",
+        "2": "IO:6.0"
+      }
+    },
+    "1": {
+      "classID": "0",
+      "uniqueID": "1",
+      "inputs": {
+        "0": "CONST:0",
+        "1": "BLOCK:4.0"
+      }
+    },
+    "2": {
+      "classID": "4",
+      "uniqueID": "2",
+      "inputs": {
+        "0": "BLOCK:8.0",
+        "1": "CONST:10"
+      }
+    },
+    "8": {
+      "classID": "4",
+      "uniqueID": "8",
+      "inputs": {
+        "0": "CONST:0",
+        "1": "CONST:10"
+      }
+    },
+    "23": {
+      "classID": "3",
+      "uniqueID": "23",
+      "inputs": {
+        "0": "CONST:0",
+        "1": "BLOCK:5.0"
+      }
+    },
+    "4": {
+      "classID": "6",
+      "uniqueID": "4",
+      "inputs": {
+        "0": "IO:6.0",
+        "1": "CONST:10",
+        "2": "IO:6.0"
+      }
+    },
+    "5": {
+      "classID": "4",
+      "uniqueID": "5",
+      "inputs": {
+        "0": "BLOCK:4.0",
+        "1": "IO:6.0"
+      }
+    }
+  }
+}
